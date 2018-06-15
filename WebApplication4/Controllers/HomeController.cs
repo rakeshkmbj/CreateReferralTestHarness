@@ -26,5 +26,25 @@ namespace CreateReferralTestHarness.Controllers
 
             return View();
         }
+
+        public ActionResult TrackReferrals()
+        {
+            ViewBag.Message = "Track Referrals.";
+
+            return View();
+        }
+        public ActionResult TrackRewards()
+        {
+            ViewBag.Message = "Track Rewards.";
+
+            return View();
+        }
+
+        public ActionResult GetRewardBalance()
+        {
+            ViewBag.Message = "Track Rewards.";
+
+            return View();
+        }
     }
 }
