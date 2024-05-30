@@ -38,12 +38,7 @@ namespace CreateReferralTestHarness.Controllers
                 {
                     string tokenURL = "https://nbty--UAT.cs64.my.salesforce.com//services/oauth2/token";
 
-                    var data = "grant_type=refresh_token"
-                         + "&client_id=" + HttpUtility.UrlEncode( "3MVG967gVD5fuTmL1omVvIWrWPtG_rpNRy9MO5Cq5LQc.LLg2fMDrW3QsNB5tGFHSsvLAj5dPkDeNt0yFyoI5" )
-                         + "&client_secret=" + HttpUtility.UrlEncode( "5046757764784457611" )
-                         + "&refresh_token=" + HttpUtility.UrlEncode( "5Aep8612Xuhpe0phpPd40Q87srqTgH2W1bpmH8fICFgKwkmywG01JDppdvK20OSeSdm5CJlIHbHx7o.3Hay3jay" );
-
-                    client.Headers[ HttpRequestHeader.ContentType ] = "application/x-www-form-urlencoded";
+                  
 
                     // https://nbty--UAT.cs64.my.salesforce.com//services/oauth2/token
                     var jsonResponse = client.UploadString( tokenURL, data );
